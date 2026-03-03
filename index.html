@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>FictionalPhysics - Reality Bending Engine</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay">
+        <div class="loaderContainer">
+            <div class="loader"></div>
+            <div class="loadingText">
+                <span>I</span><span>N</span><span>I</span><span>T</span><span>I</span><span>A</span><span>L</span><span>I</span><span>Z</span><span>I</span><span>N</span><span>G</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Canvas -->
+    <canvas id="canvas"></canvas>
+
+    <!-- Webcam Preview -->
+    <video id="video" autoplay playsinline></video>
+
+    <!-- Gesture Indicator -->
+    <div id="gestureIndicator">
+        <div class="indicatorDot"></div>
+        <span class="indicatorText">INITIALIZING</span>
+    </div>
+
+    <!-- Help Panel -->
+    <div id="helpPanel">
+        <div class="helpTitle">CONTROLS</div>
+        <div class="helpItem"><span class="key">1</span> Energy Ring</div>
+        <div class="helpItem"><span class="key">2</span> Sphere</div>
+        <div class="helpItem"><span class="key">3</span> Infinity</div>
+        <div class="helpItem"><span class="key">4</span> Mandala</div>
+        <div class="helpItem"><span class="key">0</span> Reset</div>
+        <div class="helpDivider"></div>
+        <div class="helpGesture">Or use hand gestures</div>
+    </div>
+
+    <!-- MediaPipe Hands CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+
+    <!-- Engine Modules -->
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/particle.js"></script>
+    <script src="js/formationManager.js"></script>
+    <script src="js/formations.js"></script>
+    <script src="js/particleSystem.js"></script>
+    <script src="js/handDetection.js"></script>
+    <script src="js/transformationController.js"></script>
+    <script src="js/engine.js"></script>
+</body>
+</html>
